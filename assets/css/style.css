@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding : 0;
+}
+
+:root{
+    --bg-danger :#f63440;
+    --bg-white : #fff;
+    --bg-light-white : #f5f5f5;  
+    --bg-black : #0c0c0c;
+    
+    --primary-font : "Poppins", sans-serif;
+    --text-white : #fff;
+    --text-black : #0c0c0c;
+    --text-danger : #f63440;
+    --text-gray :#AAAA9C;
+    --text-dark-gray : #777;
+    --text-light-green : #80EFA6;
+}
+
+body {
+    font-family : var(--primary-font);
+    font-size : 1rem;
+    font-weight : 400;
+    line-height: 1.7rem;
+    background: var(--bg-black);
+    color : var(--text-white);
+    overflow-x: hidden;
+}
+
+/* custom css */
+.text-gray {
+    color : var(--text-gray);
+} 
+.text-white {
+    color: var(--text-white);
+}
+
+.text-light-green{
+    color : var(--text-light-green);
+}
+
+
+a, a:hover{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+.btn-danger{
+    background: var(--bg-danger);
+    border-color: var(--bg-danger);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;    
+}
+
+.btn-danger:hover{
+    color : var(--text-danger);
+    background: transparent;
+}
+
+/* Navigation css */
+#header {
+    height: 55vh;
+  }
+
+#header .fixed-top{
+    /* box-shadow: 0 0.125rem 0.657rem rgb(0 0 0 / 5%); */
+    box-shadow: 1px 1px 5px 0px rgba(131,121,121,0.75);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(131,121,121,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(131,121,121,0.75);
+}
+
+
+#header .navbar-nav .nav-item .nav-link{
+    color : var(--text-white);
+    /* color: var(--text-gray); */
+    padding : 0.5rem 1rem;
+    text-align: right;
+    font-weight: 500;
+}
+
+#header .navbar-nav .nav-item .nav-link:hover,
+#header .navbar-nav .nav-item .nav-link.active{
+    color: var(--text-danger);
+}
+
+#header .navbar-toggler-icon{
+    width: unset;
+    height: unset;
+}
+
+#header .navbar-toggle:focus{
+    box-shadow : none;
+}
+
+/* Intro section css */
+
+
+.intro-heading{
+    position: relative;
+    z-index: 1;
+}
+
+.intro-img-wrapper {
+    position: relative;
+}
+.intro-img{
+    /* background-image: url(https://bslthemes.site/cvio/wp-content/uploads/2020/01/man-800x720.jpg); */
+    background-image: url(../images/original.jpeg);
+    
+    clip-path: polygon(31% 0,100% 25%,61% 100%,0 93%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+
+    background-color: #232323;
+    background-blend-mode:lighten;
+
+    /* top: -11.5vh;
+    left: -18.5vw; */
+
+    top: -.5vh;
+    left: 15.5vw;
+
+    width: 56vw;
+    height: 80vh
+}
+
+
+.intro-text{
+    margin: 14% 0 6% 0;
+    z-index: 99;
+
+    padding: .5rem;
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+.info li p a{
+    color : var(--text-gray);
+}
+
+
